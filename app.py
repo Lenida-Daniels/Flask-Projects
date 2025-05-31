@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from flask import Flask,render_template
 app = Flask(__name__)
 
@@ -22,3 +23,14 @@ def about_page(username):
 """
 if __name__ == '__main__':
     app.run(debug=True)
+=======
+from flask import Flask
+app = Flask(__name__)
+
+@app.route('/')
+def hello_world():
+    return 'Hello World'
+
+if __name__ == '__main__':
+    app.run()
+>>>>>>> 732726179e70cdb4e39b9c0b9b01780e1bbeb7f2
